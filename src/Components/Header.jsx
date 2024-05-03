@@ -11,16 +11,6 @@ export const Header = ({setResults,result}) => {
     const [input , setInput] = useState("");
     const history = useNavigate();
 
-    // check if has an account 
-    // const checkIfUserIsLoggedIn = async(e)=>{
-    //     e.preventDefault();
-    //     try{
-    //         const res = await axios.get("")
-
-    //     }catch(e){
-    //         console.log("e");
-    //     }
-    // }
       
         const handleLoginClick = (e) => {
             e.preventDefault();

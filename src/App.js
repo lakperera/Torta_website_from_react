@@ -5,10 +5,14 @@ import {Footer} from "./Components/Footer";
 import './App.css';
 import React,{useState} from "react";
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
-import { LoginPage } from "./Components/LoginPage";
-import {SignUp } from "./Components/SignUp";
-import {Cart} from "./Components/Cart/AddCartOption";
+import { LoginPage } from "./Components/Login/LoginPage";
+import {SignUp } from "./Components/Login/SignUp";
 import Profile from './Components/Profile';
+import { Cart } from "./Components/Cart/SoppingCart";
+import NotFound from "./Components/Cart/NotFound";
+import Verify_mobile_number from "./Components/Login/Verify_mobile_number";
+import Otp from "./Components/Login/Otp";
+
 
 function App() {
   const [results, setResults] = useState([]);
@@ -32,7 +36,11 @@ function App() {
               <Route path="/signup" element={<SignUp/>}/>
               <Route path="/profile" element={<Profile/>}/>
               {/* <Route path="/profile" element={<Profile/>}/> */}
-              <Route path="/cart" element={<Cart/>}/>
+              {/* <Route path="/cart" element={<Home/>}/> */}
+              {/* <Route path="/cart" element={<Cart/>}></Route> */}
+              <Route path="/notfound" element={<NotFound/>}/>
+              <Route path="/verify" element={<Verify_mobile_number/>}/>
+              <Route path="/otp" element={<Otp/>}/>
             </Routes>
             {/* <PopUp/> */}
               

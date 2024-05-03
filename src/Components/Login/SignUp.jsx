@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Login_Style/Login_Style.css'
+import './Login_Style.css'
 import { useNavigate,Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -71,7 +71,7 @@ export const SignUp = ()=> {
             
                     <a href=""><img className="google" width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/></a>
                 
-                <button name="submit"type="submit"className="btn">Sing Up</button>
+                <button name="submit"type="submit"className="btn"><Link to={"/otp"}>Sing Up</Link></button>
             </form>
         </div>
     </div>

@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
 .searchResult .List{
     background-color: white;
     display: flex;
@@ -61,3 +70,27 @@ ul li ul li {
 }
 ul li ul li a {display:block !important;} 
 ul li ul li:hover {background: #666;} */
+
+.NavBar{
+  margin-left: 45px;
+  margin-right: 45px;
+  
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+.Nav-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.titles{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.titles h1 {
+  font-size: 20px; /* Adjust the font size as needed */
+}

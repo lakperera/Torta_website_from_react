@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
     margin: 0;
     padding: 0;
@@ -210,16 +213,21 @@
   font-weight: 600;
 }
 .input-box-otp{
-  margin:34px 32px 34px 32px
-}
-.resend-otp{
+  margin:34px 32px 34px 32px;
   display: flex;
   justify-content: space-between;
-  font-size: 14.5px;
-  margin:9px 120px 4px 112px;
-  color: #fff;
+}
+.resend-otp{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 9px 112px 4px 112px;
+    color: #fff;
 
 }
-a.font{
+.font{
   color: #fff;
+  text-align: center;
+  display: inline;
 }
+
