@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Context from './Components/Cart/context/Context';
+import Context from './Components/Cart/Cart_context/Context';
 
 
 
