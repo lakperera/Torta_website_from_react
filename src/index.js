@@ -3,31 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Context from './Components/Cart/context/Context';
 
-import { configureStore } from '@reduxjs/toolkit';
-import { Provider } from 'react-redux';
-import productsReducer from './Components/slices/productsSlice';
-import { productsApi } from './Components/slices/productsApi';
 
-const store = configureStore({
- reducer:{
-  products:productsReducer,
-  [productsApi.reducerPath] : productsApi.reducer,
- },
- middleware:(getDefultMiddleware) => 
-  getDefultMiddleware().concat(productsApi.middleware),
-});
 
+
+
+// const store = configureStore({
+//  reducer:{
+//   products:productsReducer,
+//   [productsApi.reducerPath] : productsApi.reducer,
+//  },
+//  middleware:(getDefultMiddleware) => 
+//   getDefultMiddleware().concat(productsApi.middleware),
+// });
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-    <App />
 
-    </Provider>
-  </React.StrictMode>
+root.render(
+    <Context>
+
+        <App />
+    </Context>
 );
 
 // If you want to start measuring performance in your app, pass a function

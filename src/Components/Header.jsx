@@ -19,7 +19,7 @@ export const Header = ({setResults,result}) => {
                 history('/login')
             }else{
 
-                history('/login');
+                // history('/login');
             }
         };
 
@@ -158,9 +158,11 @@ export const Header = ({setResults,result}) => {
                         <span className="count">0</span>
                     </button>
 
-                    <button className="action-btn">
+                    <button className="action-btn" >
+                        <Link to={"/cart"}>
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span className="count">0</span>
+                        </Link>
                     </button>
 
                 </div>
@@ -294,23 +296,23 @@ export const Header = ({setResults,result}) => {
                         </li>
 
                         <li className="panel-list-item">
-                        <a href="#">sampel 01</a>
+                        <a href="#">sample 01</a>
                         </li>
 
                         <li className="panel-list-item">
-                        <a href="#">sampel 02</a>
+                        <a href="#">sample 02</a>
                         </li>
 
                         <li className="panel-list-item">
-                        <a href="#">sampel 03</a>
+                        <a href="#">sample 03</a>
                         </li>
 
                         <li className="panel-list-item">
-                        <a href="#">sampel 04</a>
+                        <a href="#">sample 04</a>
                         </li>
 
                         <li className="panel-list-item">
-                        <a href="#">sampel 05</a>
+                        <a href="#">sample 05</a>
                         </li>
 
                         <li className="panel-list-item">
