@@ -33,7 +33,7 @@ export const SignUp = ()=> {
                 <h1>Welcome to Torta 19</h1>
                 <div className="input-box">
                     
-                    <input type="text" name="name" placeholder="Name" required onChange={(e)=>setName(e.target.value)}/>
+                    <input type="text" name="name" placeholder="Name" onChange={(e)=>setName(e.target.value)} required/>
                     <i className='bx bxs-user'></i>
                 </div>
                 <div className="input-box">
@@ -41,11 +41,11 @@ export const SignUp = ()=> {
                     <i className='bx bxs-user'></i>
                 </div>
                 <div className="input-box">
-                    <input type="text" placeholder="Email" required onChange={(e)=>setEmail(e.target.value)}/>
+                    <input type="text" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} required/>
                     <i className='bx bxs-envelope'></i>
                 </div>
                 <div className="input-box">
-                    <input type="password" name="pwd" placeholder="password" required onChange={(e)=>setPassword(e.target.value)}/>
+                    <input type="password" name="pwd" placeholder="password" onChange={(e)=>setPassword(e.target.value)} required/>
                     <i className='bx bxs-lock-alt' ></i>
                 </div>
                 <div className="input-box">
@@ -54,14 +54,14 @@ export const SignUp = ()=> {
                     <input type="password"
                     name="pwdRepeat"
                     placeholder={passwordMatch ? "Repeat password" : "Passwords do not match"}
-                    required
+                    
                     value={repeatPassword}
-                    onChange={handleRepeatPasswordChange} />
+                    onChange={handleRepeatPasswordChange} required/>
                     <i className='bx bxs-lock-alt' ></i>
                 </div>
                 <div className="remember-frogot">
                     <label><input type="checkbox" required/>i agree to the Terms of User</label>
-                    <a href="">Frogot password?</a>
+                    <a href="#">Frogot password?</a>
                 </div>
 
                 <div className="register-link">

@@ -36,12 +36,11 @@ export const LoginPage =() =>  {
                 <form method="POST" onSubmit={submit}>
                     <h1>Login</h1>
                     <div className="input-box">
-                        <input name='email' type="Email" placeholder="Email" required onChange={(e)=>{setEmail(e.target.value) }}/>
+                        <input name='email' type="Email" placeholder="Email"  onChange={(e)=>{setEmail(e.target.value) }} required/>
                         <i className='bx bxs-user'></i>
                     </div>
                     <div className="input-box">
-                        <input name='password' type="password" placeholder="password" required 
-                        onChange={(e) =>{setPassword(e.target.value) }}/>
+                        <input name='password' type="password" placeholder="password" onChange={(e) =>{setPassword(e.target.value) }} required/>
                         <i className='bx bxs-lock-alt' ></i>
                     </div>
                     <div className="remember-frogot">

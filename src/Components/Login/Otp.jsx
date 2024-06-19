@@ -106,18 +106,15 @@ function onOTPVerify() {
                 </div>
                 </div> :
                 <div className="phoneNumber">
-                <div className="mx-auto p-4 rounded-full">
-                  <BsTelephoneFill size={30} />
-                </div>
-                <h1>Verify your phone number</h1>
-                <div class="input-box-otp">
-                    <PhoneInput country={"lk"} value={ph} onChange={setPh}/>
-                </div>
-                <button onClick={onSignup} type="submit"class="btn-send-OTP">
-                    {loading && <CgSpinner size={20} className="mt-1 animate-spin" />}
-                    
-                    <span>Send Code Via SMS</span>
-                    </button>
+                  <h1>Verify your phone number</h1>
+                  <div class="input-box-otp">
+                      <PhoneInput country={"lk"} value={ph} onChange={setPh}/>
+                  </div>
+                  <button onClick={onSignup} type="submit"class="btn-send-OTP">
+                      {loading && <CgSpinner size={20} className="mt-1 animate-spin" />}
+                      
+                      <span>Send Code Via SMS</span>
+                      </button>
                 </div>
                  }
                 </div>

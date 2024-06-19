@@ -62,7 +62,7 @@ const CartHeader = () => {
                       />
                       <div className="cartItemDetail">
                         <span>{product.name}</span>
-                        <span>₹ {product.price}</span>
+                        <span>Rs. {product.price}</span>
                       </div>
                       <AiFillDelete
                         fontSize="20px"
